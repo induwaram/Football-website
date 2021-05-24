@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Feedback</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rowdies&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://kit.fontawesome.com/2e78ce6930.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+function valform(){
+				var name=document.newform.name.value;
+				var email=document.newform.email.value;
+				var comment=document.newform.comment.value;
+				var rate=document.newform.rate.value;
+
+
+				if (name==""){
+				alert("Enter Your Correct Name Please");
+				return false;
+				}
+				else if (email==""){
+				alert("Enter Your Correct email Please");
+				return false;
+				}
+				else if (comment==""){
+				alert("Please leave a comment");
+				return false;
+				}
+				else{
+					alert("Hey "+name+" ,It was so nice to have you here. You rated our site as "+rate+" and your comment was "+comment+"Thank you so much for visiting our page.. Have a great day!");
+					}
+}
+</script>
+<a name="top"></a>
+<body>
+	<!-- header -->
+	<div class="top">
+	<a class="back" href="#top">Back to top</a>
+  </div>
+	<nav class="header">
+		<img class="logoimg" src="images/Logo.png" alt="logo">
+		<ul class="ul1">
+			<li><a  href="home.html" id='homebtn'>HOME</a></li>
+			<li><a href="quiz.html">QUIZ</a></li>
+			<li><a href="shoppingcart.html">SHOP NOW</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="site.html">SITEMAP</a></li>
+			<li><a href="student.html">ABOUT</a></li>
+			<li style="float:right;"><a class="current" href="feedback.html">FEEDBACK</a></li>
+		</ul>
+	</nav>
+
+
+	<form name="newform" method="post">
+		<div class="mainbox">
+			<p class="question">How was the experience?</p>
+		</div>
+			<div class="input1">
+				<label for="fname">Pleaser Enter Your Name : </label>
+	  		<input type="text" id="fname" name="name">
+	  		<label for="email">Please Enter Your Email :</label>
+	  		<input type="text" id="email" name="email">
+			</div>
+			<div class="input2">
+					<label for="comment">Please Enter the Comment :</label>
+					<input type="text" class="section" name="comment">
+			</div>
+			<div class="ratebox">
+				<p>What rate would you give to our site?<p>
+			</div>
+			<div class="button">
+							<input type="radio" class="radio" name="rate" value="Poor" id="star1"/>
+							<label for="star1">Poor</label><br>
+							<input type="radio" class="radio" name="rate" value="Average" id="star2"/>
+							<label for="star2">Average</label><br>
+							<input type="radio" class="radio" name="rate" value="Good" id="star3"/>
+							<label for="star3">Good</label><br>
+							<input type="radio" class="radio" name="rate" value="Excellent" id="star4"/>
+							<label for="star4">Excellent</label>
+			</div>
+			<div class="btn">
+				<button class="button1" onclick="valform();">Submit</button>
+			</div>
+	</form>
+
+		</div>
+		<div class="footer">
+			<div class="pg-editor">
+				<img  src="css/images/induwara1.jpg" height="240px"width="240px">
+						<a href="induwara.html" >  Done by:Induwara Mapalagama : Student - No2</a>
+
+			</div>
+
+		</div>
+</body>
+</html>

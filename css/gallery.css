@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #222629;
+}
+
+li {
+  float: right;
+}
+
+li a, .dropdownbutton {
+  display: inline-block;
+  color:whitesmoke;
+  text-align: center;
+  padding: 12px 16.5px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdownmenu:hover .dropdownbutton {
+  background-color: rgb(59, 94, 107);
+}
+
+li.dropdownmenu {
+  display: inline-block;
+}
+
+.dropdownmenucontent {
+  display: none;
+  position: absolute;
+  background-color:lightgray;
+  min-width: 16.5px;
+  z-index: 1;
+}
+
+.dropdownmenucontent a {
+  color: black;
+  padding: 12px 7.5px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdownmenucontent a:hover {background-color: #ffffff}
+
+.dropdownmenu:hover .dropdownmenucontent {
+  display: block;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  display: flex;
+}
+
+.profile {
+  position: relative;
+  width: 60px;
+  margin: 0 1em;
+  height: 60px;
+  border-radius: 50%;
+  background: url(../images/trophysample.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 5px #b1a2a2;
+  transition: 0.2s;
+}
+
+.profile:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #1ab84e;
+}
+
+.content {
+  position: absolute;
+  bottom: 75px;
+  padding: 20px;
+  min-width: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.content .header {
+  display: flex;
+  align-items: center;
+}
+.content .header img {
+  grid-column: 1/2;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content .header .infos {
+  margin-left: 1em;
+}
+.content .header .infos .name {
+  font-size: 1.25em;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 600;
+}
+
+.content .header .infos .title {
+  font-size: 0.9em;
+  color: #969696;
+  font-weight: 500;
+}
+
+.content .body {
+  padding: 1em;
+}
+
+.content .body p {
+  font-size: 0.95em;
+  color: #272727;
+}
+
+.profile:hover .content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-15%) translateY(0px);
+}
+
+#page-editor {
+  font-size: large;
+  text-align: center;
+  text-align: bottom;
+}

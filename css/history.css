@@ -1,0 +1,53 @@
+
+
+img {
+	width: 400px;
+	height: 200px;
+	transition: 0.5s all;
+}
+
+body {
+  background:rgb(77, 187, 172);
+
+}
+#main {
+	padding-top: 60px;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-gap: 50px;
+	width: 100%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#image-1 {
+	float: right;
+	margin: 15px;
+	height: 300px;
+}
+
+#page-editor {
+  font-size: large;
+  text-align: center;
+  text-align: bottom;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

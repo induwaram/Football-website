@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:rgb(34,38,41);
+  zoom: 100%;
+  font-size: small;
+  font-family: 'Merriweather', serif;
+  
+}
+
+
+
+#sub-items{
+  font-size: smaller;
+}
+
+#page-editor {
+  font-size: large;
+  text-align: center;
+  text-align: bottom;
+}
+
+

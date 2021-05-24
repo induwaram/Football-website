@@ -1,0 +1,84 @@
+body {
+  background-image:url("images//students.jpg");
+  background-size: cover;
+  background-blend-mode:  difference;
+}
+
+
+h1{
+	font-family: Papyrus, fantasy;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 20px 20px 20px;
+}
+
+.page{
+  display: inline-block;
+  padding-left: 150px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.student{
+  background-size:250;
+}
+
+.student {
+  position:  relative;
+  width: 250px;
+  height: 260px;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  background-position: center;
+  transition: 0.5s;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+}
+
+.student::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(90%);
+  background-color: #262626;
+  color: #fff;
+  padding: 0 8px;
+  content: attr(data-title);
+  font-size: 24px;
+  text-align: center;
+}
+
+.student::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding-top: 35%;
+  font-size: 18px;
+  text-transform: uppercase;
+  content: attr(data-text);
+  transition: 0.5s;
+  margin-top: 8px;
+  transform: translateY(100%);
+}
+
+.student:hover:after{
+  transform:translateY(0);
+  transition:0.5s 0.1s;
+  opacity:1;
+}
+.student:hover:before{
+  transform:translateY(0);
+  padding:8px;
+  background-color:rgba(0,0,0,0.9);
+  transition:0.5s;
+}

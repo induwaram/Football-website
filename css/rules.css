@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      background: url("images\\rulebk.jpg") no-repeat;
+      background-size:cover;
+    background-attachment: fixed;
+  }
+  .mainone{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 1350px;
+    height: 1200px;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .rules{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 25px;
+    left: 500px;
+  }
+  .pic1{
+    position: absolute;
+    top: 97px;
+    left: 40px;
+    width: 400px;
+    height: 250px;
+  }
+  .pic2{
+    position: absolute;
+    top: 97px;
+    left: 477px;
+    width: 400px;
+    height: 250px;
+  }
+  .pic3{
+    position: absolute;
+    top: 97px;
+    left: 910px;
+    width: 400px;
+    height: 250px;
+  }
+  .rulesdesc{
+    position: absolute;
+    width:1270px;
+    height: 430px;
+    top: 390px;
+    left:40px;
+    font-family: 'Patrick Hand', cursive;
+  }
+  .rulesdesc ul{
+    font-size: 20px;
+    list-style-type: circle;
+
+  }
+  .top{
+    position: fixed;
+    bottom: 20px;
+    right: 47px;
+    z-index: 90;
+    width: 90px;
+
+    height: 20px;
+    background-color: white;
+
+  }
